@@ -1,0 +1,14 @@
+.header-title > h1, .header-title1 > h1, .header-title2> h1{
+background-color:rgba(0,0,0,0.2);
+color:aqua;
+font-size:45px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header-title>p, .header-title1>p, .header-title2>p{
+    font-size:18px;
+    color:rgb(133, 189, 238);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+ 
