@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+body{
+    font-size:20px;
+    font-family:cursive;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas: 
+        "header"
+        "menu"
+        "content"
+        "fact"
+        "footer";
+    background-color:white;   
+    gap:10px;                   
+}
+.header{
+    grid-area:header;
+    background-color:green;
+    text-align:center;
+    color:aliceblue;
+}
+.header >h1{
+    font-size:40px;
+}
+.menu{
+    grid-area:menu;
+}
+.menu ul {
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+}
+.menu li{
+    height:40px;
+    width:200px;
+    color:black;
+    background-color: aqua;
+    padding:10px;
+    text-align:center;
+    margin-bottom:7px;
+
+}
+.menu li:hover {
+    background-color:#0099cc;
+}
+.display{
+    display: flex;
+}
+.content{
+    grid-area:content;
+    margin-left:50px;
+}
+.fact{
+    grid-area:fact;
+    background-color: antiquewhite;
+    color:cadetblue;
+    border:1px solid black;
+}
+.fact li {
+    padding-top:7px;
+}
+.fact h1{
+    font-size:30px;
+    padding-left:30px;
+}
+.footer{
+    background-color: #0099cc;
+    text-align:center;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h1>Solutions of My Life</h1>
+        </div>
+        <div class="display">
+            <div class="menu">
+                <ul>
+                    <li>Disciplan</li>
+                    <li>Consistency</li>
+                    <li>Avoid Distraction</li>
+                </ul>
+            </div>
+                <div class="content">
+                    <h2>I Have To Do Something To Support My Family</h2>
+                    <p>I Will Work Hard To Reach That Level, Where I can Give Them real Happiness They deserve</p>
+                    <p>I will work hard for me,i reaily don t wont to waste my whole life in just responsibilities</p>
+                </div>
+        </div>        
+                <div class="fact">
+                    <h1>Facts:</h1>
+                    <ul>
+                        <li>ONLY YOU CAN DO THIS IN THIS WORLD</li>
+                        <li>I CAN DO IT.</li>
+                        <li>YOU CAN DO IT</li>
+                    </ul>
+                </div> 
+    
+    </div>
+
+    <div class="footer">
+       <h2> Remember your PRIME time.(I Know You Can Do This )<h2>
+        <h2>A Worrior never forget, how he passed the past.</h2>
+    </div>
+</body>
+</html>
