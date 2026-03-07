@@ -11,4 +11,81 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
- 
+
+.left-border{
+    border:none;
+    border-left:4px solid yellow;
+    border-radius: 10px;    
+}
+.img-ui-1{
+    background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:770px;
+}
+.img-ui-2{
+    background-image:url("https://img.freepik.com/free-photo/beautiful-lake-mountains_395237-44.jpg?semt=ais_user_personalization&w=740&q=80");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:770px;
+    
+}
+
+.img-ui-3{
+    background-image:url("https://media.istockphoto.com/id/471926619/photo/moraine-lake-at-sunrise-banff-national-park-canada.jpg?s=612x612&w=0&k=20&c=mujiCtVk5QA697SD3d8V8BGmd91-8HlxCNHkolEA0Bo=");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:770px;
+}
+#popup {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 10px 100px 10px 100px ;   
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+.btn:hover + .popup {
+    display: block !important;  /* Override the inline style to show the popup */
+}
+.popup:hover {
+    display: block;  /* Keep it visible while hovering over the popup itself */
+}
+/* Optional: Add a smooth transition for better UX */
+.popup {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+.btn:hover + .popup,
+.popup:hover {
+    opacity: 1;
+}
+
+    
+    
+@media(max-width:359px){
+    .header-title >h1, .header-title1 >h1, .header-title2 >h1 {
+        font-size:20px;
+    }
+    .header-title >p, .header-title1 >p, .header-title2 >p {
+        font-size:20px;
+    }
+    }
+@media(max-width:359px){
+    .carousel-inner{
+        height:280;
+        
+    }
+}
+
+@media(max-width:px){
+    .carousel-inner{
+        height:800px;
+    }
+}
