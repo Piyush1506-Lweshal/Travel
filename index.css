@@ -1,3 +1,9 @@
+*{
+    box-sizing:border-box;
+}
+
+
+
 .header-title > h1, .header-title1 > h1, .header-title2> h1{
 background-color:rgba(0,0,0,0.2);
 color:aqua;
@@ -40,34 +46,72 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-attachment: fixed;
     height:770px;
 }
-#popup {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 10px 100px 10px 100px ;   
-      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-}
 
-.btn:hover + .popup {
-    display: block !important;  /* Override the inline style to show the popup */
-}
-.popup:hover {
-    display: block;  /* Keep it visible while hovering over the popup itself */
-}
-/* Optional: Add a smooth transition for better UX */
-.popup {
-    transition: opacity 0.5s ease;
-    opacity: 0;
-}
-.btn:hover + .popup,
-.popup:hover {
-    opacity: 1;
-}
+.chamoli-img{
+    transition:transform 0.9s ease ;
 
+}
+.chamoli-img:hover{
+    transform:scale(1.6);
     
+}
+.chamoli-card{
+    overflow:hidden;
+}
+.guptkashi-img{
+    transition:transform 0.9s ease ;   
+
+}
+.guptkashi-img:hover{
+    transform:scale(1.6);
+    
+}   
+    
+.guptkashi-card{
+    overflow:hidden;
+}   
+.himalayas-img{
+    transition:transform 0.9s ease ;   
+
+} 
+.himalayas-img:hover{
+    transform:scale(1.6);
+    
+}
+.himalayas-card{
+    overflow:hidden;
+}
+
+.header-title{
+    animation: left_right 10s linear infinite;
+}
+/* animation */
+@keyframes left_right{
+    from{
+        transform:translateX(-1200px);
+        opacity: 1;
+    }
+    to {
+        transform:translateX(1000px);
+        opacity:1;
+    }
+}
+
+.nainital{
+    animation:slide_left 2s linear;
+}
+
+@keyframes slide_left{
+    from{
+        transform:translateX(90px);
+        opacity:0.5;
+     to{
+        transform:translateX(90px);
+        opacity:0.5;
+
+     }   
+    }
+}
     
 @media(max-width:359px){
     .header-title >h1, .header-title1 >h1, .header-title2 >h1 {
